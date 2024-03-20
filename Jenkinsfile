@@ -7,7 +7,7 @@ pipeline {
     }
 environment {
     PATH = "/opt/apache-maven-3.9.6/bin:$PATH"
-    JAVA_HOME = '/path/to/java/11'
+    JAVA_HOME = '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'
 }
     stages {
         stage('Hello') {
