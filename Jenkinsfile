@@ -31,7 +31,8 @@ environment {
 
     stage('SonarQube analysis') {
     environment {
-      JAVA_HOME = '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'
+      JAVA_HOME = '/usr/lib/jvm/java-11-openjdk-amd64'
+      PATH = "/usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH"
       scannerHome = tool 'sonarqube-scanner'
     }
     steps{
